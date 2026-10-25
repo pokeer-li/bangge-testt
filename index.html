@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f1eee3">
+  <meta name="description" content="12 个工位事故，测出你的 SB16 上班牛马人格。">
+  <title>班格测试 · SB16 上班牛马人格</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23182220'/%3E%3Cpath d='M12 19h40v9H12zm0 13h24v6H12zm0 10h17v5H12z' fill='%23dcff4f'/%3E%3Ccircle cx='49' cy='45' r='8' fill='%23f36b4d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="paper-texture" aria-hidden="true"></div>
+  <div class="spreadsheet-grid" aria-hidden="true"></div>
+
+  <div class="site">
+    <header class="site-header">
+      <a class="brand" href="#" id="brand-home" aria-label="返回首页">
+        <span class="brand__mark" aria-hidden="true">SB</span>
+        <span class="brand__text">
+          <strong>班格测试</strong>
+          <small>SB16 · 上班牛马人格</small>
+        </span>
+      </a>
+      <div class="header-ticket">
+        <span class="header-ticket__dot" aria-hidden="true"></span>
+        12 道工位事故 · 大约 3 分钟
+      </div>
+    </header>
+
+    <main>
+      <section class="screen welcome" id="welcome-screen">
+        <div class="welcome-copy">
+          <div class="kicker">
+            <span>SB16 PERSONALITY CHECK</span>
+            <i aria-hidden="true"></i>
+            <span>仅供娱乐</span>
+          </div>
+          <h1>
+            上班可以没劲，<br>
+            人格必须<br>
+            <em>有名有姓。</em>
+          </h1>
+          <p class="welcome-lede">
+            别人测人格，我们测班格。用 12 个真实工位事故，
+            看看你是哪一种上班牛马——不评判工作能力，只尽量说中你那口没说出口的气。
+          </p>
+          <div class="welcome-actions">
+            <button class="start-button" id="start-button" type="button">
+              <span class="start-button__clock" aria-hidden="true"></span>
+              <span>刷工牌，开始上班</span>
+              <b aria-hidden="true">↗</b>
+            </button>
+            <div class="welcome-note">
+              <strong>今日打卡提示</strong>
+              <p>牛会哞，马会叫，牛马会收到。<br>请按真实反应作答，尊严先放工位抽屉里。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="welcome-visual" aria-hidden="true">
+          <div class="lanyard lanyard--left"></div>
+          <div class="lanyard lanyard--right"></div>
+          <article class="staff-card">
+            <div class="staff-card__top">
+              <span>STAFF ID</span>
+              <span>临时牛马 · 001</span>
+            </div>
+            <div class="staff-card__photo">
+              <svg viewBox="0 0 220 220">
+                <path class="cow-head" d="M57 87c0-38 23-63 53-63s53 25 53 63v42c0 39-22 61-53 61s-53-22-53-61Z"/>
+                <path class="cow-ear" d="M63 79C43 59 22 70 27 92c4 18 20 30 40 27M157 79c20-20 41-9 36 13-4 18-20 30-40 27"/>
+                <path class="cow-suit" d="M61 171c-21 11-31 27-34 49h166c-3-22-13-38-34-49l-27 14H88Z"/>
+                <path class="cow-tie" d="m110 173 17 13-17 27-17-27Z"/>
+                <circle class="cow-eye" cx="88" cy="105" r="7"/>
+                <circle class="cow-eye" cx="132" cy="105" r="7"/>
+                <path class="cow-eye-bag" d="M78 119c7 7 14 8 21 4m23-4c7 7 14 8 21-4"/>
+                <ellipse class="cow-nose" cx="110" cy="137" rx="24" ry="16"/>
+                <circle class="cow-nostril" cx="102" cy="137" r="3"/>
+                <circle class="cow-nostril" cx="118" cy="137" r="3"/>
+                <path class="cow-spot" d="M59 74c7-23 23-38 45-44-2 21-16 42-37 57Z"/>
+                <path class="cow-spot" d="M157 117c10 16 9 32-2 45-12-10-17-25-13-42Z"/>
+              </svg>
+              <span class="staff-card__photo-label">正面照 · 已显疲态</span>
+            </div>
+            <div class="staff-card__info">
+              <div>
+                <small>姓名</small>
+                <strong>今日牛马</strong>
+              </div>
+              <div>
+                <small>部门</small>
+                <strong>工位生态研究部</strong>
+              </div>
+              <div>
+                <small>岗位</small>
+                <strong>等结果揭晓</strong>
+              </div>
+            </div>
+            <div class="staff-card__bottom">
+              <div class="barcode" aria-hidden="true"></div>
+              <span>SB16-000-000</span>
+            </div>
+          </article>
+
+          <div class="clock-card">
+            <div class="clock-card__top">
+              <span>距离下班</span>
+              <i aria-hidden="true"></i>
+            </div>
+            <strong>00:01</strong>
+            <p>但老板刚说再对一下</p>
+          </div>
+
+          <div class="coffee-cup">
+            <span class="coffee-cup__steam coffee-cup__steam--one"></span>
+            <span class="coffee-cup__steam coffee-cup__steam--two"></span>
+            <div class="coffee-cup__body">美式<br>续命</div>
+            <span class="coffee-cup__handle"></span>
+          </div>
+
+          <span class="sticky sticky--one">收到<br><i>但没看懂</i></span>
+          <span class="sticky sticky--two">对齐<br><i>但没对齐</i></span>
+          <span class="sticky sticky--three">闭环<br><i>先别问从哪开</i></span>
+          <span class="clip" aria-hidden="true"></span>
+        </div>
+
+        <div class="welcome-bottom" aria-hidden="true">
+          <span>PUNCH IN · 摸鱼前请先打卡</span>
+          <i></i>
+          <span>班格不代表能力，工资才代表</span>
+        </div>
+      </section>
+
+      <section class="screen quiz" id="quiz-screen" hidden>
+        <div class="quiz-shell">
+          <aside class="attendance-sidebar">
+            <div class="attendance-sidebar__head">
+              <span>今日考勤卡</span>
+              <strong id="question-count">01 / 12</strong>
+            </div>
+            <div class="attendance-dots" id="attendance-dots" aria-hidden="true"></div>
+            <div class="attendance-sidebar__stamp">工位<br>事故</div>
+            <div class="attendance-sidebar__quote">
+              <span>“</span>
+              <p>没有标准答案。只有你当时有没有翻白眼。</p>
+            </div>
+            <div class="attendance-sidebar__note">
+              <strong>答题须知</strong>
+              <p>请选择你最可能做出的真实反应，别按“优秀员工模板”答。</p>
+            </div>
+          </aside>
+
+          <div class="quiz-main">
+            <div class="mobile-progress" aria-hidden="true">
+              <span id="mobile-progress-fill"></span>
+            </div>
+            <article class="question-card" id="question-card" aria-live="polite">
+              <div class="question-card__head">
+                <span id="question-scene">WEEKDAY / 09:01</span>
+                <span id="question-category">开工反应</span>
+              </div>
+              <h2 id="question-title"></h2>
+              <p class="question-hint" id="question-hint"></p>
+              <div class="answer-grid" id="answer-grid" role="radiogroup" aria-labelledby="question-title"></div>
+            </article>
+            <div class="quiz-controls">
+              <button class="back-button" id="back-button" type="button">
+                <span aria-hidden="true">↶</span> 撤回上一步
+              </button>
+              <button class="next-button" id="next-button" type="button" disabled>
+                <span>选一个再打卡</span>
+                <b aria-hidden="true">→</b>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen calculating" id="calculating-screen" hidden>
+        <div class="calculating-inner">
+          <div class="punch-machine" aria-hidden="true">
+            <div class="punch-machine__display">17:59</div>
+            <div class="punch-machine__slot"></div>
+            <div class="punch-machine__card">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="punch-machine__buttons"><i></i><i></i><i></i></div>
+          </div>
+          <p>正在读取你的工位残留物</p>
+          <h2 id="calculating-title">分析班味浓度<br>提取牛马人格</h2>
+          <span id="calculating-status">先看看你见到需求时的第一反应</span>
+          <div class="printer"></div>
+        </div>
+      </section>
+
+      <section class="screen result" id="result-screen" hidden>
+        <div class="result-inner">
+          <div class="result-topline">
+            <span>SB16 上班牛马人格报告</span>
+            <button class="round-button" id="restart-top" type="button" aria-label="重新测试" title="重新测试">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/>
+              </svg>
+            </button>
+          </div>
+
+          <article class="result-hero" id="result-hero">
+            <div class="result-copy">
+              <p class="result-copy__eyebrow">你的工位生态位是</p>
+              <div class="result-name-row">
+                <h1 id="result-name">准点战神</h1>
+                <span class="smell-meter">
+                  <strong id="smell-index">74</strong>
+                  <small>班味浓度</small>
+                </span>
+              </div>
+              <p class="result-slogan" id="result-slogan"></p>
+              <p class="result-summary" id="result-summary"></p>
+              <div class="trait-tags" id="trait-tags"></div>
+            </div>
+
+            <div class="result-badge" aria-hidden="true">
+              <div class="result-badge__holes"></div>
+              <div class="result-badge__top">
+                <span>EMPLOYEE OF THE MONTH</span>
+                <span id="result-type-code">SB16 · 001</span>
+              </div>
+              <div class="result-badge__symbol" id="result-symbol">时</div>
+              <div class="result-badge__identity">
+                <small>上班人格</small>
+                <strong id="badge-name">准点战神</strong>
+                <span id="badge-en">ON-TIME WARRIOR</span>
+              </div>
+              <div class="result-badge__barcode"></div>
+              <div class="result-badge__bottom">
+                <span>有效期</span>
+                <b>至下次发薪日</b>
+              </div>
+            </div>
+          </article>
+
+          <section class="status-strip">
+            <article>
+              <small>精神状态</small>
+              <strong id="result-mood"></strong>
+            </article>
+            <article>
+              <small>剩余草料</small>
+              <strong id="result-feed"></strong>
+            </article>
+            <article>
+              <small>工位特长</small>
+              <strong id="result-talent"></strong>
+            </article>
+            <article>
+              <small>今日建议</small>
+              <strong id="result-advice"></strong>
+            </article>
+          </section>
+
+          <div class="result-columns">
+            <section class="result-panel moments-panel">
+              <div class="panel-title">
+                <span>01</span>
+                <h2>你的上班名场面</h2>
+              </div>
+              <div class="moments-list" id="moments-list"></div>
+            </section>
+
+            <section class="result-panel perspective-panel">
+              <div class="panel-title">
+                <span>02</span>
+                <h2>两种视角</h2>
+              </div>
+              <div class="perspective-item">
+                <small>同事眼中的你</small>
+                <p id="colleague-view"></p>
+              </div>
+              <div class="perspective-item">
+                <small>你眼中的自己</small>
+                <p id="self-view"></p>
+              </div>
+            </section>
+          </div>
+
+          <section class="survival-panel">
+            <div class="panel-title">
+              <span>03</span>
+              <h2>工位生存指南</h2>
+            </div>
+            <div class="survival-grid">
+              <article>
+                <span>认真一条</span>
+                <p id="serious-tip"></p>
+              </article>
+              <article>
+                <span>发疯一条</span>
+                <p id="unhinged-tip"></p>
+              </article>
+            </div>
+          </section>
+
+          <section class="signature-panel">
+            <div>
+              <small>你的牛马口头禅</small>
+              <blockquote id="result-quote"></blockquote>
+            </div>
+            <span class="signature-stamp">已阅<br>不升职</span>
+          </section>
+
+          <div class="result-actions">
+            <button class="save-button" id="save-button" type="button">
+              保存我的牛马工牌 <span aria-hidden="true">↓</span>
+            </button>
+            <button class="copy-button" id="copy-button" type="button">
+              复制报告结果
+            </button>
+            <button class="restart-button" id="restart-button" type="button">
+              换个工位重新测
+            </button>
+          </div>
+
+          <p class="disclaimer">
+            本测试是互联网语境下的娱乐自嘲，不是心理诊断、职业测评或离职建议。
+            你的工作能力不由四个字决定，更不能由老板的一句“这个很简单”决定。
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
